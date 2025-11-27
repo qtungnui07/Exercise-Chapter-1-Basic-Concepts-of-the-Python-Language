@@ -1,0 +1,3 @@
+	
+(0°C × 9/5) + 32 = 32°F
+arithmetic operators toan tu so hoc

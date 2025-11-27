@@ -42,8 +42,11 @@ print(a / b)
 # • Write a function sum_two_numbers(a, b) that returns the sum of two integers.
 # • Call the function and print the result.
 
+
 def sum_two_numbers(a, b):
     return a + b
+
+
 print(sum_two_numbers(21, 7))
 
 # Exercise 7. Declare, process, and display personal information
@@ -67,12 +70,16 @@ print(f"Doubled Score: {doubled_score}, {type(doubled_score)}")
 # Exercise 8. Check if a number is even
 # • Write a function is_even(n) that returns True if n is even, otherwise False.
 
-n=int(input())
+n = int(input())
+
+
 def is_even(x):
-    if x%2==0:
+    if x % 2 == 0:
         return True
     else:
         return False
+
+
 print(is_even(n))
 
 # Exercise 9. Find the maximum of three numbers
@@ -91,8 +98,8 @@ print(is_even(n))
 #     else:
 #         print(a[i])
 
-n=list(map(int, input().split()))
-maximum=n[0]
+n = list(map(int, input().split()))
+maximum = n[0]
 for num in n:
     if num > maximum:
         maximum = num
@@ -102,8 +109,11 @@ print(maximum)
 # • Write a function greet(name="Student") that prints "Hello, Student!".
 # • Call the function with and without providing an argument.
 
+
 def greet(name="Student"):
     print(f"Hello, {name}!")
+
+
 greet()
 greet("qtitpc")
 greet("qtung")
@@ -115,8 +125,8 @@ greet("qtung")
 
 try:
     age_input = int(input())
-    age=int(age_input)
-    if age >= 120 or age <=1:
+    age = int(age_input)
+    if age >= 120 or age <= 1:
         print("Invalid age")
     else:
         print("OK")
@@ -171,18 +181,52 @@ print(f"{avg_bmi:.2f}")
 # • Exercise 16: Input two integers from the keyboard and print the result of
 # their division. Handle division by zero and invalid input types.
 
+try:
+    a, b = map(int, input().split())
+    print("a / b =", a / b)
+except ZeroDivisionError:
+    print("Error: division by zero")
+except ValueError:
+    print("Error: invalid integer input")
 
 # • Exercise 17: Input a number and calculate its square root. If the input is
 # negative, display an error message.
 
+try:
+    n = float(input())
+    if n < 0:
+        print("negative number")
+    else:
+        print(n**0.5)
+except ValueError:
+    print("Invalid input")
 
 # • Exercise 18: Input two floating-point numbers and print their sum. Handle
 # errors when the input is not a valid float.
 
+try:
+    a, b = map(float, input().split())
+    print(a + b)
+except ValueError:
+    print("input is not a valid float")
 
 # • Exercise 19: Input an integer and calculate its factorial. Handle errors for
 # negative input or invalid data types.
-
+try:
+    a = int(input())
+    if a < 0:
+        print("negative input")
+    res = 1
+    for i in range(1, a + 1):
+        res *= i
+except ValueError:
+    print("invalid data types")
 
 # • Exercise 20: Input a string and print its length. Handle the case where the
 # user enters an empty string by displaying an error message.
+
+s = input()
+if s == "":
+    print("an empty string")
+else:
+    print(len(s))

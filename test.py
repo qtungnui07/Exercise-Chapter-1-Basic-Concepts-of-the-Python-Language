@@ -1,4 +1,43 @@
+s = input()
+if s == "":
+    print("an empty string")
+else:
+    print(len(s))
 
+# try:
+#     a = int(input())
+#     if a < 0:
+#         print("negative input")
+#     res = 1
+#     for i in range(1, a + 1):
+#         res *= i
+#     print(res)
+# except ValueError:
+#     print("invalid data types")
+
+# try:
+#     a,b=map(float,input().split())
+#     print(a+b)
+# except ValueError:
+#     print("input is not a valid float")
+
+
+# try:
+#     n = float(input())
+#     if n < 0:
+#         print("negative number")
+#     else:
+#         print(n**0.5)
+# except ValueError:
+#     print("Invalid input")
+
+# try:
+#     a, b = map(int, input().split())
+#     print("a / b =", a / b)
+# except ZeroDivisionError:
+#     print("Error: division by zero")
+# except ValueError:
+#     print("Error: invalid integer input")
 
 # weight, height = map(float, input().split())
 # avg_bmi = weight / (height * height)

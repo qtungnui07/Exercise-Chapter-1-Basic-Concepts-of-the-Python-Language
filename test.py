@@ -1,8 +1,38 @@
-s = input()
-if s == "":
-    print("an empty string")
-else:
-    print(len(s))
+# q = [[3, 4], [1, 2], [5, 6], [8, 7], [10, 9]]
+# q = sorted(q)
+# for i in q:
+#     a, b = i
+#     if not e:
+#         e = [a, b]
+#     else:
+#         if a <= e[1]:
+#             e[1] = max(e[1], b)
+#         else:
+#             r.append(e)
+#             e = [a, b]
+# r.append(e)
+# print(r)
+
+# q = [[1,2],[3,4],[5,6],[7,8]]
+# w = []
+# e = []
+# r = []
+# for i in q:
+#     for j in i:
+#         w.append(j)
+#         if len(w) == 4:
+#             e.append(min(w))
+#             e.append(max(w))
+#             r.append(e)
+#             e = []
+#             w = []
+# print(r)
+
+# s = input()
+# if s == "":
+#     print("an empty string")
+# else:
+#     print(len(s))
 
 # try:
 #     a = int(input())

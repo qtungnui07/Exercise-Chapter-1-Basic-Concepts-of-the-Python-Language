@@ -292,7 +292,7 @@ def exercise_21():
         delta = tinh_biet_thuc(a, b, c)
         init = phan_loai(delta)
         print(delta, init)
-    except:
+    except ValueError:
         print("error handling")
 
 
@@ -519,13 +519,10 @@ def bai_tap_26():
             # else:
             #     print(f"Số lớn nhất là {z}")
             # print(f"Số lớn nhất trong ba số là: {max(x, y, z)}")
-
         def binh_phuong(x):
             return x**2
-
         def lap_Phuong(x):
             return x**3
-
         sum_calc(a, b)
         dif(b, c)
         mul(a, b, c)
@@ -535,7 +532,7 @@ def bai_tap_26():
         )
         print(f"Lập phương: a={lap_Phuong(a)}, b={lap_Phuong(b)}, c={lap_Phuong(c)}")
     except ValueError:
-        print("Lỗi: Dữ liệu nhập vào không đúng định dạng.")
+        print("error")
 
 
 bai_tap_26()

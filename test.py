@@ -116,3 +116,40 @@
 #         maximum = num
 # print(maximum)
 #
+def bai_tap_26():
+    try:
+        a = float(input("Nhập số a: "))
+        b = float(input("Nhập số b: "))
+        c = float(input("Nhập số c: "))
+        def sum_calc(x, y):
+            print(f"Tổng ({x} + {y}) = {x + y}")
+        def dif(x, y):
+            print(f"Hiệu ({x} - {y}) = {x - y}")
+        def mul(x, y, z):
+            print(f"Tích ({x} * {y} * {z}) = {x * y * z}")
+        def max_value(x, y, z):
+            m = x
+            if y > m: m = y
+            if z > m: m = z
+            print(f"Số lớn nhất là {m}")
+            # if x >= y and x >= z:
+            #     print(f"Số lớn nhất là {x}")
+            # elif y >= x and y >= z:
+            #     print(f"Số lớn nhất là {y}")
+            # else:
+            #     print(f"Số lớn nhất là {z}")
+            # print(f"Số lớn nhất trong ba số là: {max(x, y, z)}")
+        def binh_phuong(x):
+            return x ** 2
+        def lap_Phuong(x):
+            return x ** 3
+        sum_calc(a, b)
+        dif(b, c)
+        mul(a, b, c)
+        max_value(a, b, c)
+        print(f"Bình phương: a={binh_phuong(a)}, b={binh_phuong(b)}, c={binh_phuong(c)}")
+        print(f"Lập phương: a={lap_Phuong(a)}, b={lap_Phuong(b)}, c={lap_Phuong(c)}")
+    except ValueError:
+        print("Lỗi: Dữ liệu nhập vào không đúng định dạng.")
+
+bai_tap_26()
